@@ -9,6 +9,17 @@ window = {
 }
 
 /**
+ * 打开一个线程自动允许录屏投屏提示
+ */
+ 
+threads.start(function () {
+   var beginBtn;
+      if (beginBtn = classNameContains("Button").textContains("立即开始").findOne(2000)) {
+          beginBtn.click();
+      }
+  });
+
+/**
  * 权限管理
  */
 auto.waitFor();
